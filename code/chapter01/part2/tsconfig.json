@@ -1,0 +1,26 @@
+{
+    "include": [
+        "./src/**/*"
+    ],
+    // "exclude": [
+    //     "./src/hello/**/*"
+    // ],
+    "compilerOptions": {
+        "target": "ES5",
+        "module": "es2015",
+        // "lib": []
+        "outDir": "./dist",
+        // 所有全局作用域中的文件合并为一个js文件
+        "outFile": "./dist/app.js",
+        "allowJs": false,
+        "checkJs": false,
+        "removeComments": true,
+        "noEmit": false,
+        "noEmitOnError": true,
+        "strict": false,
+        "alwaysStript": true,
+        "noImplicitAny": false,
+        "noImplicitThis": true,
+        "strictNullChecks": true
+    }
+}
