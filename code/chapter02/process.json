@@ -2,7 +2,7 @@
   "apps": [
     {
       "name": "tanchishe",
-      "script": "part2-server/index.js",
+      "script": "./part2-server/index.js",
       "log_date_format": "YYYY-MM-DD HH:mm:ss",
       "env": {
         "NODE_ENV": "production",
