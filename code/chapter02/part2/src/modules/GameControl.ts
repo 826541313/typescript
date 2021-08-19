@@ -34,22 +34,22 @@ class GameControl {
         switch (this.direction) {
             case "ArrowUp":
             case "Up":
-            case "W":
+            case "w":
                 Y -= 10
                 break;
             case "ArrowDown":
             case "Down":
-            case "S":
+            case "s":
                 Y += 10
                 break;
             case "ArrowLeft":
             case "Left":
-            case "A":
+            case "a":
                 X -= 10
                 break;
             case "ArrowRight":
             case "Right":
-            case "D":
+            case "d":
                 X += 10
                 break;
         }
