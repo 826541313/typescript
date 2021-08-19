@@ -5,7 +5,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 module.exports = {
     entry: "./src/index.ts",
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname,'../part2-server/dist'),
         filename: "bundle.js",
         environment: {
             arrowFunction: false,
@@ -47,14 +47,14 @@ module.exports = {
                     "style-loader",
                     "css-loader",
                     {
-                        loader:"postcss-loader",
-                        options:{
-                            postcssOptions:{
-                                plugins:[
+                        loader: "postcss-loader",
+                        options: {
+                            postcssOptions: {
+                                plugins: [
                                     [
                                         "postcss-preset-env",
                                         {
-                                            browsers:'last 2 versions'
+                                            browsers: 'last 2 versions'
                                         }
                                     ]
                                 ]
