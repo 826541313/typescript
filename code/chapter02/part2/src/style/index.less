@@ -13,17 +13,21 @@ body {
 
 #main {
     width           : 360px;
-    height          : 420px;
+    height          : 450px;
     background-color: @bg-color;
     margin          : 100px auto;
     border          : 10px solid black;
     border-radius   : 40px;
 
-    display: flex;
-
+    display        : flex;
     flex-flow      : column;
     align-items    : center;
     justify-content: space-around;
+
+    #help {
+        text-align: center;
+        font-size : 16px;
+    }
 
     #stage {
         width   : 304px;
