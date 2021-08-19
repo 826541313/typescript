@@ -2,7 +2,7 @@
   "apps": [
     {
       "name": "tanchishe",
-      "script": "node_modules/webpack/bin/webpack.js serve",
+      "script": "part2-server/index.js",
       "log_date_format": "YYYY-MM-DD HH:mm:ss",
       "env": {
         "NODE_ENV": "production",
