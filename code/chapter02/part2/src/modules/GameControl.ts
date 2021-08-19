@@ -14,7 +14,7 @@ class GameControl {
     constructor() {
         this.snake = new Snake()
         this.food = new Food()
-        this.scorePanel = new ScroePanel(10,2)
+        this.scorePanel = new ScroePanel(10, 2)
 
         this.init()
     }
@@ -34,18 +34,22 @@ class GameControl {
         switch (this.direction) {
             case "ArrowUp":
             case "Up":
+            case "W":
                 Y -= 10
                 break;
             case "ArrowDown":
             case "Down":
+            case "S":
                 Y += 10
                 break;
             case "ArrowLeft":
             case "Left":
+            case "A":
                 X -= 10
                 break;
             case "ArrowRight":
             case "Right":
+            case "D":
                 X += 10
                 break;
         }
