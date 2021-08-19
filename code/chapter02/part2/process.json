@@ -1,0 +1,25 @@
+{
+  "apps": [
+    {
+      "name": "tanchishe",
+      "script": "server/index.js",
+      "log_date_format": "YYYY-MM-DD HH:mm:ss",
+      "env": {
+        "NODE_ENV": "production",
+        "CONFIG_ENV": "production"
+      },
+      "env_huidu": {
+        "NODE_ENV": "production",
+        "CONFIG_ENV": "huidu"
+      },
+      "env_test": {
+        "NODE_ENV": "production",
+        "CONFIG_ENV": "test"
+      },
+      "disable_logs": false,
+      "instances": 2,
+      "instance_var": "INSTANCE_ID",
+      "exec_mode": "cluster"
+    }
+  ]
+}
