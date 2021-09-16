@@ -1,14 +1,19 @@
 class Snake {
+    // 获取蛇头
     head: HTMLElement
+    // 获取蛇身（包括蛇头）
     bodies: HTMLCollection
+    // 获取蛇的容器
     element: HTMLElement
 
     constructor() {
         this.element = document.getElementById('snake')!
+        // 类型断言
         this.head = document.querySelector('#snake>div') as HTMLElement
         this.bodies = this.element.getElementsByTagName('div')
     }
 
+    // 获取蛇头坐标
     get X() {
         return this.head.offsetLeft
     }
@@ -17,6 +22,7 @@ class Snake {
         return this.head.offsetTop
     }
 
+    // 修改蛇头坐标
     set X(value) {
         if (this.X === value) {
             return
@@ -66,6 +72,7 @@ class Snake {
 
     }
 
+    // 增加身体
     addBody() {
         this.element.insertAdjacentHTML("beforeend", "<div></div>")
     }
