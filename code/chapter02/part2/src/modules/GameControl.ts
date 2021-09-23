@@ -20,7 +20,7 @@ class GameControl {
     constructor() {
         this.snake = new Snake()
         this.food = new Food()
-        this.scorePanel = new ScroePanel(10, 2)
+        this.scorePanel = new ScroePanel(10, 1)
         this.directionBtn = document.getElementsByTagName('button')!
         this.init()
     }
@@ -41,6 +41,7 @@ class GameControl {
     }
 
     keydownHandler(event: KeyboardEvent) {
+        console.log(event.key);
         this.direction = event.key
     }
 
@@ -49,7 +50,7 @@ class GameControl {
     }
 
     run() {
-        // 获取现在的坐标
+        // 获取现在蛇头的坐标
         let X = this.snake.X
         let Y = this.snake.Y
         // 判断移动方向并移动
